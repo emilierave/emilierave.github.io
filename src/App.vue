@@ -15,6 +15,7 @@
       <button @click="sayHi">Hi</button>
     </div>
     <br />
+    <br />
     <p>some skillset i have represented by logos</p>
     <p3>You can move it by pushing "left" or "right" to slide</p3>
     <div class="scroll-container">
@@ -28,10 +29,12 @@
       </div>
     </div>
     <p>get to know some of my projects</p>
-    <p>get to know some of my projects</p>
+    <h3>get to know some of my projects:</h3>
     <div class="grid-container">
       <div class="grid-item" v-for="(picture, index) in pictures" :key="index">
-        <img :src="picture.src" :alt="picture.description" />
+        <a :href="picture.url" target="_blank">
+          <img :src="picture.src" :alt="picture.description" />
+        </a>
         <p>{{ picture.description }}</p>
       </div>
     </div>
@@ -45,10 +48,36 @@ export default {
       scrollDirection: 1,
       message: 'Hi! Welcome!',
       pictures: [
-        { src: '/components/Image1.webp', description: 'Picture 1' },
-        { src: '/components/Image2.webp', description: 'Picture 2' },
-        { src: '/components/Image3.webp', description: 'Picture 3' },
-        { src: '/components/Image4.webp', description: 'Picture 4' }
+        {
+          src: '/components/Image1.webp',
+          description: 'Portfolio pages - Aurum jewelry',
+          url: 'https://aurum.contact/'
+        },
+        {
+          src: '/components/Image2.webp',
+          description: ' Buissness Cards - Photographer',
+          url: 'https://www.canva.com/design/DAFiVpYBn3s/vEIcYz_tkA5CQxnfEBDv1g/view?utm_content=DAFiVpYBn3s&utm_campaign=designshare&utm_medium=link&utm_source=editor#23'
+        },
+        {
+          src: '/components/Image3.webp',
+          description: 'Gallery page - Frearte',
+          url: 'https://frearte.com'
+        },
+        {
+          src: '/components/Image4.webp',
+          description: 'Hotel page - HotelGalery69',
+          url: 'https://hotelgalery69.pl/en/'
+        },
+        {
+          src: '/components/Image5.webp',
+          description: 'Some Apps Showcase',
+          url: 'https://www.canva.com/design/DAF_N6-AIys/lu2JqzNVa0bvrvbLIhfH_w/view?utm_content=DAF_N6-AIys&utm_campaign=designshare&utm_medium=link&utm_source=editor'
+        },
+        {
+          src: '/components/Image6.webp',
+          description: 'UX research',
+          url: 'https://www.figma.com/file/1jPqu9FKYEdmtSRGVIP7O2/TabHotel?type=design&node-id=0-1&t=EYrwkz9w8yOPmUzK-0'
+        }
       ]
     }
   },
