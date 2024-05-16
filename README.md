@@ -1,4 +1,6 @@
-# portfolio123
+# emilierave.github.io
+
+that should be my portfolio site when i learn how to deploy it properly
 
 This template should help get you started developing with Vue 3 in Vite.
 
