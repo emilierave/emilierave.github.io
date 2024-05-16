@@ -96,6 +96,8 @@ export default {
   justify-content: center;
   height: 100vh;
   font-family: 'Roboto', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .centered {
