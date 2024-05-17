@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://github.com/emilierave/emilierave.github.io",
   "deploy": "node ./node_modules/vue-gh-pages/index.js",
   "scripts": {
     "dev": "vite",
